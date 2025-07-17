@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:backgroundTint="#3F51B5"
+        android:title="Campus Events Notifier"
+        android:titleTextColor="@android:color/white"
+        app:titleCentered="true" />
+
+    <!-- Content Scroll -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSeminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔔 Seminar Notification"
+                android:backgroundTint="#3F51B5"
+                android:textColor="@android:color/white"
+                app:cornerRadius="32dp"
+                android:layout_marginBottom="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnExam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📝 Exam Reminder (Scheduled)"
+                android:backgroundTint="#009688"
+                android:textColor="@android:color/white"
+                app:cornerRadius="32dp"
+                android:layout_marginBottom="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎉 Fest Alert"
+                android:backgroundTint="#FF5722"
+                android:textColor="@android:color/white"
+                app:cornerRadius="32dp"
+                android:layout_marginBottom="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNotice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📢 Holiday Notice"
+                android:backgroundTint="#607D8B"
+                android:textColor="@android:color/white"
+                app:cornerRadius="32dp"
+                android:layout_marginBottom="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnViewEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📋 View All Events"
+                android:backgroundTint="#9C27B0"
+                android:textColor="@android:color/white"
+                app:cornerRadius="32dp"
+                android:layout_marginTop="24dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
